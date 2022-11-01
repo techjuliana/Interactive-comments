@@ -1,4 +1,5 @@
 import chamadaFetch from "./../../services/chamadafetch";
+import {ModalDelete} from "./../modalDelete";
 
 import {} from "./styled";
 //AQUI ESTAMOS CRIANDO UM COMENTARIO E PRECISAMOS MOSTRAR ELES EM BAIXO TAMBEM AO CLICAR EM ENVIAR
@@ -25,4 +26,4 @@ function enviar() {
   console.log(comentarios);
 }
 
-
+<ModalDelete/>

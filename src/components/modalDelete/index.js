@@ -1,7 +1,6 @@
 import React from "react";
 import Modal from "react-modal";
 import { useState } from "react";
-
 import {ModalStyled, FooterDelete } from "./styled";
 
 Modal.setAppElement("#root");
