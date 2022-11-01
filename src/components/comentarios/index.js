@@ -2,7 +2,7 @@ import chamadaFetch from "./../../services/chamadafetch";
 import {RespostasJson} from "./../respostasJson";
 
 import {
-  Container,
+  // Container,
   UserProfile,
   UserLeft,
 } from "./styled";
@@ -13,7 +13,7 @@ export function Comentarios() {
     comentarios.map((parametrosDoIndice) => {
       // commentDiv.innerHTML += //ONDE POR?? SUBSTITUIR PELO QUE??
      return (
-     <Container>
+     <div>
       <UserProfile>
         <UserLeft>
           <User src="{parametrosDoIndice.user.image.png}" height="30" width="30"/>
@@ -25,7 +25,7 @@ export function Comentarios() {
           <p>{parametrosDoIndice.content}</p>
       </UserProfile> 
     <RespostasJson/>
-      </Container>
+      </div>
       )}
 
       });

@@ -1,3 +1,5 @@
+import chamadaFetch from "./../../services/chamadafetch";
+
 import {
   Container,
   UserProfile,
