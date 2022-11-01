@@ -47,10 +47,3 @@ padding: 1.2rem;
   color: hsl(211, 10%, 45%);
   margin-left: 3rem;
  `
-
-// export const ProfileReplies = styled.div`
-
-//  `
-//  export const ProfileReplies = styled.div`
-
-//  `

@@ -7,7 +7,8 @@ import {
 } from "./styled";
 
 export function Comentarios() {
-  var area = document.getElementById('teste-texto') //precisamos criar uma const e armazenar os dados com o useState
+  var area = document.getElementById('teste-texto') 
+  
   var comentarios = [] 
 
   function enviar() { 
@@ -71,8 +72,12 @@ export function Comentarios() {
           </UserLeft>
           <p>{parametrosDoReplies.content}</p>
         </ProfileReplies>
+        )}
+        )} : ``}
+
        </LinhaVertical>
-       )}
-        : ``}
-        </Container> 
-      })
+        </Container>
+
+      )}
+
+      });
