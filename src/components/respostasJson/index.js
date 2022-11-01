@@ -1,3 +1,6 @@
+/* eslint-disable no-undef */
+/* eslint-disable react/jsx-no-undef */
+/* eslint-disable jsx-a11y/alt-text */
 import { useEffect, useState } from "react";
 import { chamadaService } from "../../services/chamadafetch";
 import {
@@ -18,7 +21,7 @@ const RespostasJson = () => {
 
   return (
     <div id="states">
-          {parametrosDoIndice.replies.length > 0 ? (
+          {parametrosDoIndice.replies.length > 0 ? ( 
       <LinhaVertical>
       {parametrosDoIndice.replies.map((parametrosDoReplies) =>
         <ProfileReplies id="user_profile">
@@ -32,10 +35,10 @@ const RespostasJson = () => {
           </UserLeft>
           <p>{parametrosDoReplies.content}</p>
         </ProfileReplies>
-        )} : ``}
+      )}
        </LinhaVertical>
+       ) : ''}
     </div>
-  );
-};
-
+    );
+  }
 export default RespostasJson;

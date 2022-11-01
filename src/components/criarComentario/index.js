@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import chamadaFetch from "./../../services/chamadafetch";
 import {ModalDelete} from "./../modalDelete";
 
@@ -6,7 +7,7 @@ import {} from "./styled";
 var area = document.getElementById("teste-texto");
 var comentarios = [];
 
-function enviar() {
+// function enviar() {
   const modeloDeMensagem = {
     id: Math.random(),
     content: area.value,
@@ -24,6 +25,6 @@ function enviar() {
 
   comentarios.push(modeloDeMensagem);
   console.log(comentarios);
-}
+// }
 
 <ModalDelete/>
