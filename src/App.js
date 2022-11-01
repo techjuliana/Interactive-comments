@@ -1,11 +1,11 @@
 import "./global.css";
 
-function App() {
+import {Comentarios} from "./components/comentarios";
+
+export default function App() {
   return (
     <div>
-      <h1>Hello</h1>
+      <Comentarios />
     </div>
   );
 }
-
-export default App;
