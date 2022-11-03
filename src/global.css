@@ -5,6 +5,10 @@
   outline: none;
 }
 
+.button-roxo {
+  color: hsl(238, 40%, 52%);
+}
+
 div.ReactModal__Content--after-open {
   background: rgba(0, 0, 0, 0.72) !important;
 }

@@ -44,9 +44,7 @@ export const Resposta = styled.div`
   background-color: white;
   border-radius: 5px;
   color: hsl(211, 10%, 45%);
-  .button-roxo {
-    color: hsl(238, 40%, 52%);
-  }
+
   .resp-left {
     padding: 5px;
     display: grid;

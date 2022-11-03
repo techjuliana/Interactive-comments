@@ -1,7 +1,7 @@
 // import React, { useEffect, useState } from "react";
 import "./global.css";
-import { CriarComentario } from "./components/criarComentario";
-
+// import { CriarComentario } from "./components/criarComentario";
+import { Comentarios } from "./components/comentarios";
 export default function App() {
   // useEffect(()=>{
   //   const [comentarios, setComentarios] = useState('');
@@ -19,7 +19,8 @@ export default function App() {
   //   },[])
   return (
     <div className="container">
-      <CriarComentario />
+    <Comentarios /> 
+      {/* <CriarComentario /> */}
     </div>
   );
 }

@@ -1,35 +1,36 @@
 
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
+import Responder from "./../../images/icon-reply.svg";
 import {
-  UserLeft,
+  // UserLeft,
   LinhaVertical,
-  ProfileReplies,
+  // ProfileReplies,
 } from "./styled";
 
 
 const RespostasJson = () => {
 
-  const [states, setStates] = useState([]);
+  // const [states, setStates] = useState([]);
   
   return (
     <div>
-          {parametrosDoIndice.replies.length > 0 ? ( 
+          {/* {parametrosDoIndice.replies.length > 0 ? (  */}
       <LinhaVertical>
-      {parametrosDoIndice.replies.map((parametrosDoReplies) =>
+      {/* {parametrosDoIndice.replies.map((parametrosDoReplies) =>
         <ProfileReplies id="user_profile">
           <UserLeft> 
-            <User src="{parametrosDoIndice.user.image.png}" height="30" width="30"/>
+            <img src="{parametrosDoIndice.user.image.png}" height="30" width="30"/>
                 <h3>{parametrosDoReplies.user.username} </h3>
-                <h6>{parametrosDoReplies.createdAt}</h6>
+                <h6>{parametrosDoReplies.createdAt}</h6> */}
                 <button type="button" class="button-roxo" id="cadastrarcomentario">
-                <img src="./images/icon-reply.svg" height="10" width="10" />
+                <img src={Responder} height="10" width="10" />
                 responder</button>
-          </UserLeft>
+          {/* </UserLeft>
           <p>{parametrosDoReplies.content}</p>
-        </ProfileReplies>
-      )}
+        </ProfileReplies> */}
+      {/* )} */}
        </LinhaVertical>
-       ) : ''}
+       {/* ) : ''} */}
     </div>
     );
   }
