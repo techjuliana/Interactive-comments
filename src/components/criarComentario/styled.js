@@ -37,6 +37,7 @@ export const LinhaVertical = styled.div`
 export const Resposta = styled.div`
   padding: 1.2rem;
   margin-top: 1rem;
+  margin:10px;
   margin-left: 3rem;
   grid-gap: 10px;
   max-width: 520px;

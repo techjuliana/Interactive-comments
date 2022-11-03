@@ -36,6 +36,22 @@ export function CriarComentario() {
 
   return (
     <div>
+
+<LinhaVertical>
+        <Resposta>
+          <div class="resp-left">
+            <ModalDelete id="comentarios" />
+            <button type="button" id="edit-${index}" class="button-roxo">
+              <img src={Editar} height="10" width="10" />
+              Editar
+            </button>
+          </div>
+          <div id="comentarios">
+            <p>teste da resposta</p>
+          </div>
+        </Resposta>
+      </LinhaVertical>
+      
       <ContentReplies>
         <input
           id="input"
@@ -50,20 +66,7 @@ export function CriarComentario() {
         <button id="cancelar">Cancelar</button>
       </ContentReplies>
 
-      <LinhaVertical>
-        <Resposta>
-          <div class="resp-left">
-            <ModalDelete id="comentarios" />
-            <button type="button" id="edit-${index}" class="button-roxo">
-              <img src={Editar} height="10" width="10" />
-              Editar
-            </button>
-          </div>
-          <div id="comentarios">
-            <p>teste da resposta</p>
-          </div>
-        </Resposta>
-      </LinhaVertical>
+      
     </div>
   );
 }
