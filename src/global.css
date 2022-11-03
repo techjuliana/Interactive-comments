@@ -5,11 +5,15 @@
   outline: none;
 }
 
+div.ReactModal__Content--after-open {
+  background: rgba(0, 0, 0, 0.72) !important;
+}
+
 .container {
   width: 100vw;
   height: 100vh;
   display: flex;
- justify-content: center;
+  justify-content: center;
 }
 
 body {
@@ -17,7 +21,7 @@ body {
   background-color: hsl(223, 19%, 93%);
 }
 
-button:hover{
+button:hover {
   box-shadow: inset 200px 0 0 #00000055;
 }
 

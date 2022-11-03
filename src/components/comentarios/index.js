@@ -1,8 +1,4 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable jsx-a11y/alt-text */
-/* eslint-disable no-undef */
-/* eslint-disable react/jsx-no-undef */
-import chamadaFetch from "./../../services/chamadafetch";
+import React, { useEffect, useState } from "react";
 import { RespostasJson } from "./../respostasJson";
 
 import {
@@ -14,13 +10,21 @@ import {
 export function Comentarios() {
   // comentarios = [...comments]
 
+  // const [comentarios, setComentarios] = useState('');
+
+  // useEffect(() => {
+  //   chamadaFetch.buscar(comentarios)
+  // });
+
+
   comentarios.map((parametrosDoIndice) => {
     // commentDiv.innerHTML += //ONDE POR?? SUBSTITUIR PELO QUE??
+
     return (
       <div>
         <UserProfile>
           <UserLeft>
-            <User
+            <img
               src="{parametrosDoIndice.user.image.png}"
               height="30"
               width="30"

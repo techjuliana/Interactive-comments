@@ -1,15 +1,16 @@
 import styled from "styled-components";
-export const Modal = styled.div`
-  position: fixed;
-  top: 0;
-  left: 0;
+export const Centro = styled.div`
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 100%;
-  background: #00000090;
-  opacity: 0;
+  box-sizing: border-box;
 `;
 
 export const ModalStyled = styled.div`
+  justify-content: center;
   display: grid;
   grid-gap: 0.6rem;
   border-radius: 7px;
@@ -19,6 +20,11 @@ export const ModalStyled = styled.div`
 `;
 
 export const FooterDelete = styled.div`
+  button {
+    border: none;
+    padding: 10px;
+    margin: 2px;
+  }
   .cancelar {
     background-color: hsl(211, 10%, 45%);
     color: white;

@@ -1,8 +1,5 @@
-/* eslint-disable no-undef */
-/* eslint-disable react/jsx-no-undef */
-/* eslint-disable jsx-a11y/alt-text */
+
 import { useEffect, useState } from "react";
-import { chamadaService } from "../../services/chamadafetch";
 import {
   UserLeft,
   LinhaVertical,
@@ -13,14 +10,9 @@ import {
 const RespostasJson = () => {
 
   const [states, setStates] = useState([]);
-  useEffect(() => {
-    chamadaService().then((states) => {
-      setStates(states);
-    });
-  }, []);
-
+  
   return (
-    <div id="states">
+    <div>
           {parametrosDoIndice.replies.length > 0 ? ( 
       <LinhaVertical>
       {parametrosDoIndice.replies.map((parametrosDoReplies) =>

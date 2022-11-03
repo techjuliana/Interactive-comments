@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
  
-  `
+  
 textarea {
   width: 350px;
   height: 150px;
@@ -12,7 +12,7 @@ textarea {
   border-color: rgba(0, 0, 0, 0.2);
   font-family: "Rubik", sans-serif;
 }
-
+`
 
 .json-replies-content {
   display: grid;

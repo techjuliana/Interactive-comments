@@ -1,11 +1,11 @@
 import React from "react";
 import Modal from "react-modal";
 import { useState } from "react";
-import {ModalStyled, FooterDelete } from "./styled";
+import {ModalStyled, FooterDelete, Centro } from "./styled";
 
 Modal.setAppElement("#root");
 
-export function Modaltag() {
+export function ModalDelete() {
   const [isNewTagModalOpen, setIsNewTagModalOpen] = useState(false);
 
   function hardleOpenNewTagModal() {
@@ -21,7 +21,7 @@ export function Modaltag() {
       <button onClick={hardleOpenNewTagModal}> Excluir </button>
       <Modal isOpen={isNewTagModalOpen} 
       onRequestClose={hardleCloseNewTagModal}>
-
+      <Centro>
         <ModalStyled>
           <h2>Deletar comentario</h2>
           <p>Voce tem certeza que deseja deletar esse comentario?</p>
@@ -39,6 +39,7 @@ export function Modaltag() {
             </button>
           </FooterDelete>
         </ModalStyled>
+        </Centro>
       </Modal>
     </div>
   );
