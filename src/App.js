@@ -1,6 +1,6 @@
 // import React, { useEffect, useState } from "react";
 import "./global.css";
-import { ModalDelete } from "./components/modalDelete";
+import { CriarComentario } from "./components/criarComentario";
 
 export default function App() {
   // useEffect(()=>{
@@ -19,7 +19,7 @@ export default function App() {
   //   },[])
   return (
     <div className="container">
-      <ModalDelete />
+      <CriarComentario />
     </div>
   );
 }

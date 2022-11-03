@@ -1,4 +1,11 @@
 import styled from "styled-components";
+
+export const Container = styled.div`
+  .button-vermelho {
+  color: hsl(358, 79%, 66%);
+}
+`
+
 export const Centro = styled.div`
   display: flex;
   position: absolute;
@@ -14,8 +21,8 @@ export const ModalStyled = styled.div`
   display: grid;
   grid-gap: 0.6rem;
   border-radius: 7px;
-  padding: 50px;
-  width: 350px;
+  padding: 20px;
+  width: 450px;
   background-color: white;
 `;
 
@@ -36,4 +43,6 @@ export const FooterDelete = styled.div`
     color: white;
     border-radius: 7px;
   }
+
+
 `;

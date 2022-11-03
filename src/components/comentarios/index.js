@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { RespostasJson } from "./../respostasJson";
 
 import {
-  // Container,
   UserProfile,
   UserLeft,
 } from "./styled";

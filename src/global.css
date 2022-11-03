@@ -19,6 +19,7 @@ div.ReactModal__Content--after-open {
 body {
   font-family: "Rubik", sans-serif;
   background-color: hsl(223, 19%, 93%);
+  text-transform:capitalize;
 }
 
 button:hover {
@@ -31,4 +32,11 @@ a {
 
 h3 {
   color: black;
+}
+
+button {
+  background-color: rgb(255, 255, 255);
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
 }
