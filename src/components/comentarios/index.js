@@ -1,22 +1,13 @@
-// import React, { useEffect, useState } from "react";
-
 import Responder from "./../../images/icon-reply.svg";
 import { UserProfile, UserLeft, LinhaVertical, ProfileReplies } from "./styled";
 
-export function Comentarios() {
-  // comentarios = [...comments]
-
-  // const [comentarios, setComentarios] = useState('');
-
-  // useEffect(() => {
-  //   chamadaFetch.buscar(comentarios)
-  // });
-
-  // comentarios.map((parametrosDoIndice) => {
-  // commentDiv.innerHTML += //ONDE POR?? SUBSTITUIR PELO QUE??
+export function Comentarios(props) {
+  // console.log(props);
 
   return (
     <div>
+      {/* {props.map((parametrosDoIndice) => {  */}
+
       <UserProfile>
         <UserLeft>
           {/* <img
@@ -24,6 +15,7 @@ export function Comentarios() {
               height="30"
               width="30"
             /> */}
+
           {/* <h3>{parametrosDoIndice.user.username}</h3>
             <h6>{parametrosDoIndice.createdAt}</h6> */}
         </UserLeft>
@@ -31,7 +23,7 @@ export function Comentarios() {
           <img src={Responder} height="10" width="10" />
           responder
         </button>
-        {/* <p>{parametrosDoIndice.content}</p> */}
+        {/* <p>{props.content}</p> */}
       </UserProfile>
 
       <div>
@@ -53,7 +45,9 @@ export function Comentarios() {
         </LinhaVertical>
         {/* ) : ''} */}
       </div>
+      {/* // }); */}
+      {/* })} */}
     </div>
+    // })
   );
-  // });
 }

@@ -3,21 +3,20 @@ import "./global.css";
 import { CriarComentario } from "./components/criarComentario";
 import { Comentarios } from "./components/comentarios";
 export default function App() {
-  const [comentario, setComentario] = useState([]);
-
   function pegandoComentario() {
-    fetch("./data.json")
-      .then((resp) => resp.json())
-      .then((data) => setComentario(data.comentario));
+    fetch("./data.json").then((resp) => resp.json());
+    console.log().then((data) => setComentario(data.comentario));
   }
+
+  const [comentario, setComentario] = useState([]);
   useEffect(() => {
     pegandoComentario();
   });
 
   return (
     <div className="container">
-      <Comentarios/>
-      <CriarComentario />  
+      <Comentarios data={comentario} />
+      <CriarComentario data={comentario} />
     </div>
   );
 }

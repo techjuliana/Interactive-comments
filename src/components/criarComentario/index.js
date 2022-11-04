@@ -41,7 +41,7 @@ export function CriarComentario() {
         <Resposta>
           <div class="resp-left">
             <ModalDelete id="comentarios" />
-            <button type="button" id="edit-${index}" class="button-roxo">
+            <button type="button" id="" class="button-roxo">
               <img src={Editar} height="10" width="10" />
               Editar
             </button>
@@ -60,13 +60,11 @@ export function CriarComentario() {
           placeholder="Adicione um comentario..."
           required
         ></input>
-        <button id="salvar" onClick="enviar()">
+        <button id="salvar" onClick={enviar}>
           Salvar
         </button>
         <button id="cancelar">Cancelar</button>
       </ContentReplies>
-
-      
     </div>
   );
 }
