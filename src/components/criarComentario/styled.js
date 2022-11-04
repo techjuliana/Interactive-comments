@@ -40,7 +40,7 @@ export const Resposta = styled.div`
   margin:10px;
   margin-left: 3rem;
   grid-gap: 10px;
-  max-width: 520px;
+  max-width: 530px;
   max-height: 500px;
   background-color: white;
   border-radius: 5px;
