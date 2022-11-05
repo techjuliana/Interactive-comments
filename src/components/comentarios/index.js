@@ -1,8 +1,8 @@
-import Responder from "./../../images/icon-reply.svg";
+import responder from "./../../images/icon-reply.svg";
 import { UserProfile, UserLeft, LinhaVertical, ProfileReplies } from "./styled";
 
 export function Comentarios(props) {
-  // console.log(props);
+  console.log(props);
 
   return (
     <div>
@@ -20,7 +20,7 @@ export function Comentarios(props) {
             <h6>{parametrosDoIndice.createdAt}</h6> */}
         </UserLeft>
         <button type="button" class="button-roxo" id="cadastrarcomentario">
-          <img src={Responder} height="10" width="10" />
+          <img src={responder} height="10" width="10" />
           responder
         </button>
         {/* <p>{props.content}</p> */}
