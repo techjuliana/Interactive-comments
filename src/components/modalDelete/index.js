@@ -18,8 +18,8 @@ export function ModalDelete() {
 
   return (
     <Container>
-      <button class="button-vermelho" onClick={hardleOpenNewTagModal} > 
-             <img src={Deletar} height="10" width="10"/>
+      <button className="button-vermelho" onClick={hardleOpenNewTagModal} > 
+             <img src={Deletar} alt="" height="10" width="10"/>
             Excluir </button>
       <Modal isOpen={isNewTagModalOpen} onRequestClose={hardleCloseNewTagModal}>
         <Centro>
@@ -29,12 +29,12 @@ export function ModalDelete() {
             <FooterDelete>
               <button
                 id="cancelar"
-                class="cancelar"
+                className="cancelar"
                 onClick={hardleCloseNewTagModal}
               >
                 NÃO, CANCELAR
               </button>
-              <button id="deletarConfirmacao" class="deletar">
+              <button id="deletarConfirmacao" className="deletar">
                 {" "}
                 SIM, DELETAR
               </button>
